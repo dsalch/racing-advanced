@@ -4,11 +4,13 @@ let nowDir = 0
 let rightCorrections = 0
 let leftCorrections = 0
 let switches = 0
-let Base_Speed = 40
+basic.showIcon(IconNames.Fabulous)
+let Base_Speed = 45
 let TurnOffset = 40
 // Pre-computed motor speeds
 let SpeedInside = Base_Speed - TurnOffset
 let SpeedOutside = Base_Speed + TurnOffset
+music._playDefaultBackground(music.builtInPlayableMelody(Melodies.PowerUp), music.PlaybackMode.UntilDone)
 // LOOP 2: Fast Evaluation (Twice per second) with Subtle Adjustments
 basic.forever(function () {
     // 500ms (0.5s) window for rapid real-world reaction
