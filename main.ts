@@ -4,7 +4,7 @@ let nowDir = 0
 let rightCorrections = 0
 let leftCorrections = 0
 let switches = 0
-let Base_Speed = 45
+let Base_Speed = 40
 let TurnOffset = 40
 // Pre-computed motor speeds
 let SpeedInside = Base_Speed - TurnOffset
